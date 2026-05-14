@@ -1,0 +1,14 @@
+numpy
+scipy
+matplotlib
+networkx
+gerrychain
+gurobipy
+loguru
+pip
+pytest
+python-dotenv
+ruff
+tqdm
+typer
+-e .
