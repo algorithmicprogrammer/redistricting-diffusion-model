@@ -1,0 +1,36 @@
+{
+  "grid": "5x5",
+  "mode": "sample",
+  "fiber_definition": "five connected districts, exactly five unit-population nodes per district",
+  "n_plans": 36,
+  "labeling_convention": "canonical unlabeled plans; district-label permutations are not duplicated",
+  "initial_metrics": {
+    "cut_edges": 20.0,
+    "polsby_popper": 0.43633231299858244,
+    "density_score": 1.0,
+    "pop_dev": 0.0,
+    "contiguous": 1.0
+  },
+  "metrics_csv": "/home/algorithmicprogrammer/Documents/redistricting-diffusion-model/outputs/fiber_5x5/metrics.csv",
+  "projection_png": "/home/algorithmicprogrammer/Documents/redistricting-diffusion-model/outputs/fiber_5x5/fiber_projection.png",
+  "gallery_files": [
+    "/home/algorithmicprogrammer/Documents/redistricting-diffusion-model/outputs/fiber_5x5/fiber_gallery.png"
+  ],
+  "gallery_note": "In full mode, metric files include all plans; gallery pages may be capped by --max-gallery-pages.",
+  "best_by_cut_edges": {
+    "plan": 2,
+    "cut_edges": 17.0,
+    "polsby_popper": 0.5515240436302081,
+    "density_score": 0.45,
+    "pop_dev": 0.0,
+    "contiguous": 1.0
+  },
+  "best_by_polsby_popper": {
+    "plan": 2,
+    "cut_edges": 17.0,
+    "polsby_popper": 0.5515240436302081,
+    "density_score": 0.45,
+    "pop_dev": 0.0,
+    "contiguous": 1.0
+  }
+}

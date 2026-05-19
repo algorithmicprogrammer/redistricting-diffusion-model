@@ -1,1 +1,1 @@
-from redistricting_diffusion_model import config  # noqa: F401
+"""Redistricting diffusion experiment utilities."""
