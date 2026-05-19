@@ -122,6 +122,66 @@ python experiments/fiber_5x5.py --mode sample --out outputs/my_fiber_run
 | `--max-gallery-pages` | int or `all` | `all` | In full mode, controls how many gallery PNG pages to write. Use `all` to write every page. |
 | `--out` | path | `outputs/fiber_5x5` | Directory where output files are saved. |
 
+## Project Organization
 
+This repository is organized around a small redistricting diffusion model package, an executable experiment script, generated outputs, and supporting data.
+
+```text
+redistricting-diffusion-model/
+├── README.md
+├── LICENSE
+├── Makefile
+├── pyproject.toml
+├── requirements.txt
+│
+├── redistricting_diffusion_model/
+│   ├── __init__.py
+│   ├── config.py
+│   ├── grid.py
+│   ├── fiber.py
+│   ├── metrics.py
+│   ├── laplacian.py
+│   ├── qp.py
+│   └── visualization.py
+│
+├── experiments/
+│   └── fiber_5x5.py
+│
+├── data/
+│   ├── raw/
+│   │   └── IA_counties/
+│   ├── interim/
+│   ├── processed/
+│   └── external/
+│
+├── outputs/
+│   └── fiber_5x5/
+│       ├── initial_partition.png
+│       ├── boundary_nodes.png
+│       ├── fiber_gallery.png
+│       ├── fiber_projection.png
+│       ├── metrics.csv
+│       ├── summary.json
+│       ├── full_fiber_gallery_*.png
+│       ├── full_fiber_metrics.csv
+│       ├── full_fiber_projection.png
+│       └── full_fiber_summary.json
+│
+├── reports/
+│   └── figures/
+│
+├── notebooks/
+│
+├── tests/
+│   └── test_data.py
+│
+└── legacy/
+    ├── diffusion_model/
+    ├── plots/
+    ├── qp_boundary_visualisation.py
+    ├── qp_fast_sweep.py
+    ├── qp_parameter_tuning.py
+    └── weight.py
+```
 ---
 Made with ♥ by <a href="https://github.com/kirtisoglu">@kirtisoglu</a> &  <a href="https://github.com/algorithmicprogrammer">@algorithmicprogrammer</a>
